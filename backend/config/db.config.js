@@ -7,8 +7,10 @@ const dbConfig = {
     database: process.env.DB_NAME,
     host: process.env.DB_HOST,
 };
+
 //Create the connection pool
 const pool = mysql.createPool(dbConfig)
+
 async function query(sql, params) { 
     const [rows] = await pool
     .execute(sql, params);
