@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
 import { Navbar, Offcanvas, Container, Nav } from "react-bootstrap";
 
+
 function Header(props) {
   const { isLogged, setIsLogged, employee } = useAuth();
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -23,7 +24,7 @@ function Header(props) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Check if the window width is `md` or `sm`
+  // Check if the window width is `md` or `sm` 1280
   const isMdScreen = windowWidth >= 1280; // Bootstrap `md` breakpoint is 768px
 
   const handleLogout = () => {
@@ -40,9 +41,10 @@ function Header(props) {
 
   console.log(employee);
   // Check if the logged-in user is an admin or manager
- const isAdmin = employee?.employee_role === 2 || employee?.employee_role === 3;
+  const isAdmin =
+    employee?.employee_role === 2 || employee?.employee_role === 3;
 
-  console.log(isAdmin)
+  console.log(isAdmin);
 
   return (
     <div>
@@ -142,13 +144,14 @@ function Header(props) {
           <Navbar bg="light" expand={false}>
             <Container fluid>
               <Navbar.Brand href="/">
-                <img src={logo} alt="Logo" style={{ width: "150px" }} />
+                <img src={logo} alt="Logo" style={{ width: "130px" }} />
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="offcanvasNavbar" />
               <Navbar.Offcanvas
                 id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel"
                 placement="end"
+                style={{ width: "50%" }}
               >
                 <Offcanvas.Body className="mt-5">
                   <Nav className="justify-content-end flex-grow-1 pe-3 pt-5">

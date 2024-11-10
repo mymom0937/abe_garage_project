@@ -18,9 +18,12 @@
 /* .info {
   
 } */
-.display{
+
+
+/* .display{
   width: 164%;
-}
+} */
+ 
 .dropdown-table{width: 100%;}
 .close-icon {
   display: flex;

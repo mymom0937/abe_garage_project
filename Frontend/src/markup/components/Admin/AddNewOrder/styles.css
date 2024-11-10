@@ -4,7 +4,7 @@
   position: relative;
   margin-bottom: 41px;
   text-align: center;
-  width: 174%; /* Width is 174% of the container */
+  width: 100%; /* Width is 185% of the container */
 }
 
 .search-input-wrapper {
@@ -91,7 +91,8 @@ textarea, input[type="text"] {
   border-radius: 8px; /* Optional: adds rounded corners */
   padding: 20px; /* Optional: adds padding inside the section */
   background: #fff; /* Optional: sets background color to white */
-  margin: 20px; /* Optional: adds margin around the section */
+  margin: 120px 20px 20px 20px; /* Optional: adds margin around the section */
+
 }
 
 /* Media Queries for smaller screens */
@@ -171,9 +172,11 @@ textarea, input[type="text"] {
   }
 .auto-container {
     width: 101%;
-   
     padding: 0px 15px;
     margin: 15% -11%;
+}
+.container-style{
+  margin-top: 400px;
 }
   .search-box-container input {
     padding-top: 5%;

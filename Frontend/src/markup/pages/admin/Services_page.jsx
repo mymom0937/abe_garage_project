@@ -13,7 +13,7 @@ function Services_page() {
           <AdminMenu />
         </div>
         <div className="col-md-9 services-right-side main-content">
-         <Services_management/>
+        <Services_management/>
         </div>
       </div>
     </div>

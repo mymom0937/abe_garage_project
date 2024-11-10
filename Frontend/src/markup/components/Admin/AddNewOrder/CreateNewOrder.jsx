@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./style.css"; // Import the CSS file
+import "./styles.css"; // Import the CSS file
 import { useAuth } from "../../../../Contexts/AuthContext";
 import { getAllCustomers } from "../../../../services/Order/order.service"; // Import the service function
 import { useNavigate } from "react-router-dom";
@@ -89,7 +89,7 @@ export default function CreateNewOrder() {
           <h2>Create new order</h2>
         </div>
         <div>
-          <div className="form-column col-lg-7">
+          <div className="form-column col-lg-12">
             <div className="inner-column">
               <div>
                 <div className="col-md-12">
@@ -145,7 +145,7 @@ export default function CreateNewOrder() {
                   <button
                     className="theme-btn btn-style-one"
                     type="submit"
-                    data-loading-text="Please wait..."
+                    data-loading-text="Please wait..." style={{width:"30%"}}
                   >
                     <span>ADD NEW CUSTOMER</span>
                   </button>
@@ -159,12 +159,13 @@ export default function CreateNewOrder() {
   );
 }
 
+
 // import React, { useState, useEffect, useRef } from "react";
-// import "./style.css";
+// import styles from "./styles.module.css"; // Import the module CSS file
 // import { useAuth } from "../../../../Contexts/AuthContext";
-// import { getAllCustomers } from "../../../../services/order.service";
+// import { getAllCustomers } from "../../../../services/Order/order.service"; // Import the service function
 // import { useNavigate } from "react-router-dom";
-// import { FaSearch, FaUser } from "react-icons/fa";
+// import { FaSearch, FaUser } from "react-icons/fa"; // Import FaUser for the profile icon
 
 // export default function CreateNewOrder() {
 //   const [customers, setCustomers] = useState([]);
@@ -180,7 +181,7 @@ export default function CreateNewOrder() {
 //       if (employee && employee.employee_token) {
 //         try {
 //           const data = await getAllCustomers(employee.employee_token);
-//           console.log("Fetched customers:", data); // Debugging log
+
 //           if (data.customers) {
 //             setCustomers(data.customers || []);
 //           } else {
@@ -211,7 +212,6 @@ export default function CreateNewOrder() {
 //         );
 //       });
 //       setFilteredCustomers(filtered);
-//       console.log("Filtered customers:", filtered); // Debugging log
 //     } else {
 //       setDropdownVisible(false);
 //       setFilteredCustomers([]);
@@ -220,7 +220,6 @@ export default function CreateNewOrder() {
 
 //   const handleSearchChange = (event) => {
 //     setSearchTerm(event.target.value);
-//     console.log("Search term changed:", event.target.value); // Debugging log
 //   };
 
 //   const handleCustomerSelect = (customer) => {
@@ -228,13 +227,11 @@ export default function CreateNewOrder() {
 //       `${customer.customer_first_name} ${customer.customer_last_name}`
 //     );
 //     setDropdownVisible(false);
-//     console.log("Customer selected:", customer); // Debugging log
 //   };
 
 //   const handleClickOutside = (event) => {
 //     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
 //       setDropdownVisible(false);
-//       console.log("Clicked outside"); // Debugging log
 //     }
 //   };
 
@@ -248,31 +245,28 @@ export default function CreateNewOrder() {
 //   };
 
 //   return (
-//     <section className="contact-section">
+//     <section className="contact-section section-Wrapper outer-container">
 //       <div className="auto-container">
 //         <div className="contact-title">
 //           <h2>Create new order</h2>
 //         </div>
 //         <div>
-//           <div className="form-column col-lg-7">
+//           <div className="form-column col-lg-12">
 //             <div className="inner-column">
 //               <div>
 //                 <div className="col-md-12">
-//                   <div className="search-box-container" ref={dropdownRef}>
-//                     <div className="search-input-wrapper">
+//                   <div className={styles.searchBoxContainer} ref={dropdownRef}>
+//                     <div className={styles.searchInputWrapper}>
 //                       <input
 //                         type="text"
 //                         value={searchTerm}
 //                         onChange={handleSearchChange}
 //                         placeholder="Search for customers using first name, last name, email address, or phone number"
 //                       />
-//                       <button className="search-icon">
-//                         <FaSearch />
-//                       </button>
 //                     </div>
 //                     {dropdownVisible && filteredCustomers.length > 0 && (
-//                       <div className="dropdown">
-//                         <table className="dropdown-table">
+//                       <div className={styles.dropdown}>
+//                         <table className={styles.dropdownTable}>
 //                           <thead>
 //                             <tr>
 //                               <th>First Name</th>
@@ -291,11 +285,9 @@ export default function CreateNewOrder() {
 //                                 <td>{customer.customer_phone_number}</td>
 //                                 <td>
 //                                   <button
-//                                     className="profile-icon"
+//                                     className={styles.profileIcon}
 //                                     onClick={() =>
-//                                       handleProfileRedirect(
-//                                         customer.customer_id
-//                                       )
+//                                       handleProfileRedirect(customer.id)
 //                                     }
 //                                   >
 //                                     <FaUser />
@@ -310,13 +302,14 @@ export default function CreateNewOrder() {
 //                   </div>
 
 //                   <button
-//                     className="theme-btn btn-style-one"
+//                     className={styles.themeBtn}
 //                     type="submit"
 //                     data-loading-text="Please wait..."
 //                   >
 //                     <span>ADD NEW CUSTOMER</span>
 //                   </button>
 //                 </div>
+                
 //               </div>
 //             </div>
 //           </div>

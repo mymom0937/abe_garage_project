@@ -41,6 +41,7 @@
 .service-description {
   font-size: 14px;
   color: #666;
+  padding: 1% !important;
 }
 
 /* Styling for the checkbox */

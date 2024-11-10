@@ -11,7 +11,9 @@ function Home() {
         <div className="auto-container">
           <h5>Working since 1992</h5>
           <h2>
-            Tuneup Your Car <br /> to Next Level
+            Enhance Your Car’s <br />
+            Efficiency and Power
+            {/* Tuneup Your Car <br /> to Next Level */}
           </h2>
 
           <div className="video-box">
@@ -33,14 +35,14 @@ function Home() {
               </Link>
             </div>
             <div className="text">
-              Explore our offerings video
-              <br /> about us
+              Watch the Video to
+              <br /> Explore Our Services
             </div>
           </div>
         </div>
       </section>
 
-      <section className="about-section">
+      <section className="about-section" style={{ paddingBottom: "0px" }}>
         <div className="auto-container">
           <div className="row">
             <div className="col-lg-5">
@@ -93,7 +95,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="services-section">
+      <section className="services-section" style={{ marginTop: "0px" }}>
         <div className="auto-container">
           <div className="sec-title style-two">
             <h2>Our Services</h2>
@@ -302,8 +304,8 @@ function Home() {
               </Link>
             </div>
             <div className="text">
-              Explore our offerings video
-              <br /> about us
+              Watch the Video to
+              <br /> Explore Our Services
             </div>
           </div>
         </div>

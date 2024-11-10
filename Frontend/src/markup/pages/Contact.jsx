@@ -7,7 +7,9 @@ function Contact() {
   return (
     <>
       <section>
-        <div data-parallax='{"y": 50}' className="sec-bg1"></div>
+        <div data-parallax='{"y": 50}' className="sec-bg1">
+          <p className="contact-us">Contact Us</p>
+        </div>
       </section>
 
       <section className="why-choose-us">

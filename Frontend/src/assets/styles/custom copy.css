@@ -1,11 +1,13 @@
 /* Home pages */
 .video-section .sec-bg {
   background-image: url("../images/banner/banner.jpg");
-  background-size: cover; /* Adjusts the image to cover the entire element */
+  background-size: cover;
   background-position: center; /* Centers the image within the element */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   width: 100%; /* Set the width as needed */
-  height: 70vw; /* Set the height as needed */
+  /* height: 70vw; */
+  height: auto;
+  top: +70px;
 }
 
 /* //banner 2 */
@@ -15,8 +17,16 @@
   background-position: center; /* Centers the image within the element */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   width: 100%; /* Set the width as needed */
-  height: 70vw; /* Set the height as needed */
+  /* height: 70vw;  */
+  height: auto;
 }
+
+/* Media query for screens smaller than 768px */
+/* @media (max-width: 767px) {
+  .another-section .sec-bg {
+    height: 0; 
+  }
+} */
 
 .image {
   background-image: url("../images/banner/carwheel.png");
@@ -136,13 +146,67 @@
 /* contact us */
 
 .sec-bg1 {
-  background-image: url("../images/banner/contactus6.jpeg");
+  background-image: url("../images/banner/banner.jpg");
   background-size: cover; /* Adjusts the image to cover the entire element */
   background-position: center; /* Centers the image within the element */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   width: 100%; /* Set the width as needed */
-  height: 20vw; /* Set the height as needed */
+  height: 40vw;
+  top: +70px;
+  /* height: auto; */
 }
+.sec-bg1 {
+  margin-top: 100px;
+}
+
+/* .sec-bg1 .contact-us {
+  padding-top: 280px;
+  padding-left: 200px;
+  color: white;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: 500;
+} */
+/* //////// */
+/* Base styling for larger screens */
+.sec-bg1 .contact-us {
+  padding-top: 350px;
+  padding-left: 200px;
+  color: white;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: 500;
+}
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .sec-bg1 .contact-us {
+    padding-top: 150px;
+    padding-left: 100px;
+    font-size: 48px;
+  }
+}
+/* Small screens (mobiles) */
+@media (max-width: 768px) {
+  .sec-bg1 .contact-us {
+    padding-top: 100px;
+    padding-left: 50px;
+    font-size: 36px;
+    text-align: center;
+  }
+}
+/* Extra small screens */
+@media (max-width: 480px) {
+  .sec-bg1 .contact-us {
+    padding-top: 50px;
+    padding-left: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+/* ********************** */
+/* My Addition End*/
+/* /////// */
+
 .work-img .contact {
   width: 500px;
   height: 450px;
@@ -175,7 +239,7 @@
     url(.../../../template_assets//images//resource/pattern.png);
   padding: 20px;
 }
-.row .services-right-side > *{
+.row .services-right-side > * {
   padding-right: calc(var(--bs-gutter-x) * 2) !important;
   padding-left: calc(var(--bs-gutter-x) * 2) !important;
 }
@@ -292,42 +356,146 @@
   background-color: #c0392b;
 }
 
-/* services page */
 .video2-section .services-bg1 {
-  background-image: url("../images/Service_Banner1.png");
+  background-image: url("../images/banner/banner.jpg");
   background-size: cover; /* Adjusts the image to cover the entire element */
   background-position: center; /* Centers the image within the element */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   width: 100%; /* Set the width as needed */
-  height: 20vw; /* Set the height as needed */
+  height: 35vw;
+  /* height: auto; */
+  /* top: +70px; */
 }
-.video3-section .services-bg2 {
-  background-image: url("../images/Service_Banner2.png");
-  background-size: cover; /* Adjusts the image to cover the entire element */
-  background-position: center; /* Centers the image within the element */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  width: 100%; /* Set the width as needed */
-  height: 20vw; /* Set the height as needed */
+/* My Addition Start*/
+/* Base styling for larger screens */
+.video2-section .services-bg1 .what-we-do {
+  padding-top: 300px;
+  padding-left: 180px;
+  color: white;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: 500;
+}
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .video2-section .services-bg1 .what-we-do {
+    padding-top: 130px;
+    padding-left: 100px;
+    font-size: 48px;
+  }
+}
+/* Small screens (mobiles) */
+@media (max-width: 768px) {
+  .video2-section .services-bg1 .what-we-do {
+    padding-top: 100px;
+    padding-left: 50px;
+    font-size: 36px;
+    text-align: center;
+  }
 }
 
-.services-section{
+/* Extra small screens */
+@media (max-width: 480px) {
+  .video2-section .services-bg1 .what-we-do {
+    padding-top: 85px;
+    padding-left: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .video2-section .services-bg1 {
+    height: 50vw;
+  }
+}
+/* *********************** */
+
+/* My Addition End*/
+.video3-section .services-bg2 {
+  background-image: url("../images/banner/banner.jpg");
+  background-size: cover; /* Adjusts the image to cover the entire element */
+  background-position: center; /* Centers the image within the element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%; /* Set the width as needed */
+  height: 30vw; /* Set the height as needed */
+}
+/* My Addition Start*/
+
+/* .video3-section .services-bg2 .what-we-do {
+  padding-top: 170px;
+  padding-left: 180px;
+  color: white;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: 500;
+} */
+
+/* Base styling for larger screens */
+.video3-section .services-bg2 .what-we-do {
+  padding-top: 270px;
+  padding-left: 170px;
+  color: white;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: 500;
+}
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .video3-section .services-bg2 .what-we-do {
+    padding-top: 130px;
+    padding-left: 100px;
+    font-size: 48px;
+  }
+}
+/* Small screens (mobiles) */
+@media (max-width: 768px) {
+  .video3-section .services-bg2 .what-we-do {
+    padding-top: 100px;
+    padding-left: 50px;
+    font-size: 36px;
+    text-align: center;
+  }
+}
+/* Extra small screens */
+@media (max-width: 480px) {
+  .video3-section .services-bg2 .what-we-do {
+    padding-top: 50px;
+    padding-left: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+/* ********************** */
+/* My Addition End*/
+.homeWrapper {
+  margin-top: 85px;
+}
+
+/* .services-section{
   padding: 80px 0 80px;
-} 
-.inner-box p{
-font-size:22px ;
-color: #555555;
+}  */
+.inner-box p {
+  font-size: 22px;
+  color: #555555;
 }
-.inner-box h2{
-font-size:26px ;
-margin-bottom: 20px;
+.inner-box h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
 }
-.inner-box h4{
-font-size:24px ;
-font-weight:bold ;
+.inner-box h4 {
+  font-size: 24px;
+  font-weight: bold;
 }
 .service-list li strong {
-font-size: 19px;
+  font-size: 19px;
 }
 .service-list li span {
-font-size: 19px;
+  font-size: 19px;
+}
+
+/* Admin Dashboard */
+.services-section {
+  margin-top: 100px;
+}
+/* Orders */
+.orders {
+  margin-top: 130px;
 }

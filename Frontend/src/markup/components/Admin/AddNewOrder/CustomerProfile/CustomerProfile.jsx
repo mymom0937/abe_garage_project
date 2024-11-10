@@ -11,11 +11,8 @@ import {
 } from "../../../../../services/Order/Allorders.service";
 import { FaEdit, FaTimes, FaHandPointer } from "react-icons/fa"; // Importing pointing hand icon// Importing other icons
 import Modal from "../CoustmerOrder/Modal"; // Import the Modal component
-
-
 import { toast, ToastContainer } from "react-toastify"; // Import toast and ToastContainer
 import "react-toastify/dist/ReactToastify.css"; // Import toast styles
-
 import "./style.css";
 
 function CustomerProfile() {
@@ -154,7 +151,7 @@ function CustomerProfile() {
         <div className="contact-title">
           <h2>Create a new order</h2>
         </div>
-        <div className="form-column col-lg-7">
+        <div className="form-column col-lg-12">
           <div className="inner-column">
             <div className="contact-form display">
               <div className="content">

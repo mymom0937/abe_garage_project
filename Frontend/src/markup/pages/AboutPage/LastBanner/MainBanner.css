@@ -2,9 +2,12 @@
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 20px;
+    padding: 130px 20px;
     text-align: center;
     position: relative;
+    margin-top: 80px;
+    top: +70px;
+    
   }
   
   .banner-content {

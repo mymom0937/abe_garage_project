@@ -100,7 +100,7 @@ const Table = () => {
   }
 
   return (
-    <section className="contact-section" style={{ paddingTop: "0" }}>
+    <section className="contact-section orders" style={{ paddingTop: "0" }}>
       <div className="contact-title" style={{ marginBottom: "50px" }}>
         <h2 className="ml-5">Orders</h2>
       </div>

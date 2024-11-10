@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import serviceService from "../../services/service.service"; //to perform API
 import image4 from "../../assets/images/Service_miniBanner.png";
+
 import { useAuth } from "../../Contexts/AuthContext";
 function Services() {
   const [services, setServices] = useState([]); // State to hold the services data
@@ -239,9 +240,11 @@ function Services() {
   return (
     <div className="homeWrapper">
       <section className="video2-section">
-        <div data-parallax='{"y": 50}' className="services-bg1"></div>
+        <div data-parallax='{"y": 50}' className="services-bg1">
+          <p className="what-we-do">What We Serve</p>
+        </div>
       </section>
-      <section className="services-section">
+      <section className="services-section" style={{ marginTop: "0px" }}>
         <div className="auto-container">
           <div className="sec-title style-two">
             <h2>Our Services</h2>
@@ -328,7 +331,9 @@ function Services() {
       </section>
 
       <section className="video3-section another-section">
-        <div data-parallax='{"y": 50}' className="services-bg2"></div>
+        <div data-parallax='{"y": 50}' className="services-bg2">
+          <p className="what-we-do">What We Serve</p>
+        </div>
       </section>
 
       <section className="cta-section">

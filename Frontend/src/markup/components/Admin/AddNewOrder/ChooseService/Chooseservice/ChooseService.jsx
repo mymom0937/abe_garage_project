@@ -125,7 +125,7 @@ export default function ChooseService({ customerId, vehicleId, employee }) {
 
   return (
     <div className="choose-service">
-      <div className="form-column col-lg-7">
+      <div className="form-column col-lg-12">
         <div className="inner-column">
           <div className="content mb-5">
             <h2>Choose Service</h2>
@@ -137,7 +137,10 @@ export default function ChooseService({ customerId, vehicleId, employee }) {
                 <div className="service-item" key={service.service_id}>
                   <div className="service-info">
                     <h6 className="service-name">{service.service_name}</h6>
-                    <p className="service-description">
+                    <p
+                      className="service-description"
+                      style={{ padding: "0!important" }}
+                    >
                       {service.service_description}
                     </p>
                     <p className="service-price">
@@ -157,7 +160,7 @@ export default function ChooseService({ customerId, vehicleId, employee }) {
             )}
           </div>
         </div>
-        <div className="inner-column mt-5">
+        <div className="inner-column">
           <div className="contact-form display">
             <div className="auto-container m-0">
               <div className="contact-title">
@@ -174,7 +177,7 @@ export default function ChooseService({ customerId, vehicleId, employee }) {
                       }
                       placeholder="Order Description"
                       rows="4"
-                      style={{ width: "100%" }}
+                      style={{ width: "100%",height:"70px" }}
                       className="form-control"
                     />
                   </div>
@@ -187,7 +190,7 @@ export default function ChooseService({ customerId, vehicleId, employee }) {
                       }
                       placeholder="Additional Request"
                       rows="4"
-                      style={{ width: "100%" }}
+                      style={{ width: "100%",height:"70px" }}
                       className="form-control"
                     />
                   </div>

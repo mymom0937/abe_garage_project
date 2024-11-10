@@ -1,14 +1,17 @@
 import React from 'react';
-import bannerImage from "../../../../assets/images/Banner2.png";
-
+// import bannerImage from "../../../../assets/images/Banner2.png";
+import bannerImage from "../../../../assets/images/banner/aboutUs.jpeg";
 import './MainBanner.css';
 
 const MainBannerr = () => {
   return (
     <div
       className="main-banner"
-      style={{ backgroundImage: `url(${bannerImage})` }}
-
+      style={{
+        backgroundImage: `url(${bannerImage})`,
+        height: "550px",
+        marginTop: "0",
+      }}
     >
       <div className="banner-content">
         {/* <h1>About Us</h1> */}

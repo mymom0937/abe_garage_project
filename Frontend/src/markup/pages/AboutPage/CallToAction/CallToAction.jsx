@@ -6,7 +6,12 @@ const CallToAction = () => {
     <section className="call-to-action">
       <h2>Schedule Your Appointment Today</h2>
       <p>1-800-456-7890</p>
-      <button className="cta-button">Contact Us</button>
+      <button
+        className="cta-button"
+        style={{ color: "white", backgroundColor: "#C0392B" }}
+      >
+        Contact Us
+      </button>
     </section>
   );
 };

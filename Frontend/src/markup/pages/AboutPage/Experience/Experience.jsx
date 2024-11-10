@@ -22,7 +22,7 @@ const Experience = () => {
         />
         <img src={rightImage} alt="Right side image" />
 
-        <div className="experience-text">
+        <div className="experience-text"style={{padding:"50px"}}>
           <h2>We have 24 years experience</h2>
           <p>
             At our garage, we prioritize seamless service and customer

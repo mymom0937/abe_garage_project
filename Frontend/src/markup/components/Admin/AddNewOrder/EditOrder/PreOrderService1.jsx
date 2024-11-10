@@ -4,14 +4,10 @@ import { getServiceInfo } from "../../../../../services/Order/Allorders.service"
 import { useAuth } from "../../../../../Contexts/AuthContext";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { updateOrder } from "../../../../../services/Order/order.service";
-
 // import "../style2.css";
 import "../CoustmerOrder/style2.css";
 import "./EditOrderstyle.css";
-
-
 import { Modal, Button } from "react-bootstrap"; // Import components for modal
-
 // Import CSS
 import "../CoustmerOrder/style2.css";
 import "./EditOrderstyle.css";
@@ -111,7 +107,7 @@ export default function CustomerOrderDetail() {
   return (
     <div>
       <div className="inner-column mt-5">
-        <div className="service-listwrapper">
+        <div className="service-listwrapper" style={{ marginTop: "100px" }}>
           <p>
             <b>{services?.vehicle_tag}</b>
           </p>

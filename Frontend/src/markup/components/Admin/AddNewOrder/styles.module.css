@@ -1,0 +1,72 @@
+/* styles.module.css */
+
+/* Default styles for screens larger than 1024px */
+.searchBoxContainer {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-bottom: 41px;
+  text-align: center;
+  width: 185%; /* Width is 185% of the container */
+}
+
+.searchInputWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Match the width of the container */
+}
+
+.searchBoxContainer input {
+  width: 100%; /* Input field takes full width of its container */
+  padding: 12px;
+  padding-left: 18px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea, input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0px !important;
+}
+
+.searchIcon {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: -40px; /* Adjust positioning if necessary */
+  z-index: 1;
+}
+
+.searchIcon svg {
+  font-size: 18px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%; /* Fixed width for dropdown */
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-bottom: 50px; /* Adjust as needed to prevent overlap */
+}
+
+.dropdownTable {
+  width: 100%; /* Table matches width of the dropdown */
+  border-collapse: collapse;
+}
+
+.dropdownTable th,
+.dropdownTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}

@@ -134,7 +134,7 @@ const handleEdit = (id) => {
       />
       <ToastContainer /> {/* Add this to render toast notifications */}
       <div>
-        <div className="titlewrap">
+        <div className="titlewrap" style={{ marginTop: "150px" }}>
           <div className="row">
             <div className="col-10 ">
               <h5 className="col-10 row">

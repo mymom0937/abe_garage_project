@@ -1,42 +1,78 @@
-/* Make header sticky */
-.main-header {
-  background-color: #f8f9fa;
-  padding: 15px;
-  position: sticky;
-  top: 0;
-  z-index: 1000; 
-}
- 
-/* My additional Start */
-/* .main-header {
-  background-color: #f8f9fa;
-  padding: 15px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
-
-/* Offset content to avoid overlap with the fixed header */
-
-/* body {
-  margin-top: 80px; 
-} */
-
-/* My additional End */
-
-/* Other existing styles */
-.link-btn .theme-btn {
-  border-radius: 8px;
-}
+/* Global Styles */
 body {
   font-family: cursive !important;
 }
-.collapse {
-  position: relative;
+
+/* Header Container */
+.main-header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
 }
-.office-hour {
+
+/* Navigation Links */
+.main-header .navigation a,
+.main-header .link-btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-header .navigation a:hover,
+.main-header .link-btn a:hover {
+  color: #007bff;
+}
+
+/* Buttons */
+.link-btn .theme-btn {
+  border-radius: 8px;
+}
+
+/* Navigation Items */
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+/* Upper Header Content */
+.header-upper {
+  display: flex;
+  align-items: center;
+}
+
+/* Offcanvas Menu for Mobile */
+.offcanvas {
+  --bs-offcanvas-padding-y: 0.8rem;
+  background-color: rgb(224, 226, 220);
+}
+
+.offcanvas-body {
+  padding-top: 80px;
+}
+
+/* Nav Link Styling */
+.nav-link {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  padding: 3px 0;
+  transition: all 300ms ease;
+}
+
+/* Office Hour and Text Styling */
+.office-hour,
+.text {
   font-size: 18px;
   font-weight: 500;
 }
@@ -45,82 +81,43 @@ body {
   font-weight: 600;
 }
 
-.collapse::before {
-  content: ""; 
-  position: absolute; 
-  right: -40px; 
-  top: 35%; 
-  height: 30%; 
-  width: 2px; 
-  background-color: rgb(224, 217, 217); 
-  z-index: 1;
-}
-.main-header .navigation a,
-.main-header .link-btn a {
-  text-decoration: none;
-}
-.main-header .navigation a:hover,
-.main-header .link-btn a:hover {
-  text-decoration: none;
-  color: #007bff;
-}
-.main-header .link-btn a.theme-btn {
-  text-decoration: none;
-}
-.main-header .navigation .dropdown a {
-  text-decoration: none;
-}
-.nav-link {
-  position: relative;
-  display: block;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 30px;
-  color: #000;
-  padding: 3px 0;
-  opacity: 1;
-  transition: all 300ms ease;
-}
-.offcanvas-body {
-  background-color: rgb(224, 226, 220);
-}
-.offcanvas {
-  --bs-offcanvas-padding-y: 0.8rem;
-}
-/* Styles specific to mobile screens */
-@media (max-width: 768px) {
-  /* Ensure navbar-toggler (hamburger icon) is visible */
+/* Mobile-Specific Styles */
+@media (max-width: 1280px) {
+  /* Display the toggle bar for mobile and tablet screens */
   .navbar-toggler {
     display: inline-block;
+    background: transparent;
     border: none;
-    background-color: transparent;
-    outline: none;
-    position: relative;
-    z-index: 1100; /* Keeps it on top of other elements */
+    z-index: 1100;
   }
-  /* Customize the offcanvas menu */
+
+  /* Hide the navigation items on mobile and tablet view */
+  .main-header .navigation {
+    display: none;
+  }
+
+  /* Offcanvas Styling */
   .offcanvas {
-    top: 60px; /* Offset from the top */
+    top: 60px;
   }
-  .offcanvas-body {
-    padding-top: 80px; /* Add extra space for better view */
-  }
+
   .offcanvas-body .nav .nav-link,
   .offcanvas-body .nav a {
     padding: 12px 0;
     font-size: 18px;
     font-weight: bold;
   }
-  /* Adjust navbar-toggler spacing */
-  .navbar-toggler {
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
 }
-/* Show the hamburger menu on mobile screens only */
-@media (min-width: 769px) {
+
+/* Tablet and Desktop Styles */
+@media (min-width: 1281px) {
+  /* Show the navigation items for larger screens */
+  .main-header .navigation {
+    display: flex !important;
+  }
+
+  /* Hide the navbar toggler on larger screens */
   .navbar-toggler {
-    display: none; /* Hide hamburger icon on tablet and desktop */
+    display: none;
   }
 }
