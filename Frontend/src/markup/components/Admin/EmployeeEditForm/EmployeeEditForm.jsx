@@ -161,7 +161,15 @@ const EditEmployee = () => {
                         className="theme-btn btn-style-one"
                         type="submit"
                         data-loading-text="Please wait..."
-                        style={{ width: "65%", height: "65%" }}
+                        style={{
+                          width: "100%",
+                          height: "50px",
+                          textAlign: "center",
+                          display: "flex",
+                          alignItems: "center",
+                          backgroundColor: "#081336",
+                          justifyContent: "center",
+                        }}
                       >
                         <span>Update</span>
                       </button>

@@ -57,22 +57,6 @@ function Services() {
         "Ensure smooth and efficient gear shifts with our comprehensive transmission services. Our skilled technicians specialize in transmission fluid changes, clutch replacements, and full transmission rebuilds to maintain your vehicle’s optimal performance.Learn more about the importance of regular transmission maintenance, explore our reliable services, and book an appointment for a smoother drive.",
       iconClass: "flaticon-gearbox",
       servicesList: [
-        //    {
-        //      name:services[2]?.service_name ?? "Loading...",
-        //      description:services[2]?.service_description ?? "Loading...",
-        //    },
-        //    {
-        //      name:services[10]?.service_name ?? "Loading...",
-        //      description:services[10]?.service_description ?? "Loading...",
-        //    },
-        //    {
-        //      name:services[11]?.service_name ?? "Loading...",
-        //      description:services[11]?.service_description ?? "Loading...",
-        //    },
-        //    {
-        //      name:services[12]?.service_name ?? "Loading...",
-        //      description:services[12]?.service_description ?? "Loading...",
-        //    },
       ],
     },
     {
@@ -244,7 +228,7 @@ function Services() {
           <p className="what-we-do">What We Serve</p>
         </div>
       </section>
-      <section className="services-section" style={{ marginTop: "0px" }}>
+      <section className="services-section" style={{ marginTop: "0px",paddingTop:"40px",paddingBottom:"40px" }}>
         <div className="auto-container">
           <div className="sec-title style-two">
             <h2>Our Services</h2>
@@ -336,7 +320,7 @@ function Services() {
         </div>
       </section>
 
-      <section className="cta-section">
+      <section className="cta-section"style={{paddingTop:"20px",paddingBottom:"20px"}}>
         <div className="auto-container">
           <div className="wrapper-box">
             <div className="left-column">

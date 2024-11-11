@@ -2,7 +2,14 @@
       .additional-services-container {
       padding: 20px;
     }
-    
+    /* Extra small screens */
+@media (max-width: 480px) {
+   .additional-services-container .content-container {
+   display: inline-block;
+  }
+}
+/* ********************** */
+/* My Addition End*/
     .title-container {
       display: flex;
       align-items: center;

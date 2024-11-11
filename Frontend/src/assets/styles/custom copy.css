@@ -21,12 +21,16 @@
   height: auto;
 }
 
-/* Media query for screens smaller than 768px */
-/* @media (max-width: 767px) {
-  .another-section .sec-bg {
-    height: 0; 
+/* My additional Start */
+/* Extra small screens */
+@media (max-width: 768px) {
+  .about-section .image-box {
+    padding-left: 40px;
+    margin: 0 auto;
+    gap: 15px;
   }
-} */
+}
+/* My additional End */
 
 .image {
   background-image: url("../images/banner/carwheel.png");
@@ -155,6 +159,14 @@
   top: +70px;
   /* height: auto; */
 }
+/* My additional Start */
+/* Extra small screens */
+@media (max-width: 480px) {
+  .sec-bg1 {
+    height: 85vw;
+  }
+}
+/* My additional End */
 .sec-bg1 {
   margin-top: 100px;
 }
@@ -194,6 +206,7 @@
     text-align: center;
   }
 }
+
 /* Extra small screens */
 @media (max-width: 480px) {
   .sec-bg1 .contact-us {
@@ -203,6 +216,7 @@
     text-align: center;
   }
 }
+
 /* ********************** */
 /* My Addition End*/
 /* /////// */
@@ -213,9 +227,31 @@
   border: 0;
   background-position: center;
 }
-.sec-title .style-two h1 h2 p {
+.sec-title .style-two h1 h2 h5 p {
   margin-left: 20px;
 }
+
+/* My additional Start */
+@media (max-width: 768px) {
+  .sec-title {
+    padding: 0 20px; /* Adds padding to the left and right of the entire section */
+  }
+
+  .sec-title h5,
+  .sec-title h2,
+  .sec-title .text p {
+    margin-left: 0; /* Reset any additional left margin */
+    margin-right: 0; /* Reset any additional right margin */
+  }
+
+  .link-btn {
+    margin-left: 20px; /* Adds left space for button */
+    margin-right: 20px; /* Adds right space for button */
+  }
+}
+
+
+/* My additional End */
 .Email {
   display: flex;
   align-items: center;
@@ -377,6 +413,13 @@
   font-weight: 500;
 }
 /* Medium screens (tablets) */
+
+/* @media (max-width: 430px) {
+  .video2-section .services-bg1 {
+   height: 250px;
+  }
+} */
+
 @media (max-width: 1024px) {
   .video2-section .services-bg1 .what-we-do {
     padding-top: 130px;
@@ -403,7 +446,7 @@
     text-align: center;
   }
   .video2-section .services-bg1 {
-    height: 50vw;
+    height: 90vw;
   }
 }
 /* *********************** */
@@ -418,16 +461,6 @@
   height: 30vw; /* Set the height as needed */
 }
 /* My Addition Start*/
-
-/* .video3-section .services-bg2 .what-we-do {
-  padding-top: 170px;
-  padding-left: 180px;
-  color: white;
-  margin-bottom: 0;
-  font-size: 60px;
-  font-weight: 500;
-} */
-
 /* Base styling for larger screens */
 .video3-section .services-bg2 .what-we-do {
   padding-top: 270px;
@@ -462,6 +495,9 @@
     font-size: 24px;
     text-align: center;
   }
+  .video3-section .services-bg2 {
+    height: 50vw;
+  }
 }
 /* ********************** */
 /* My Addition End*/
@@ -493,8 +529,18 @@
 
 /* Admin Dashboard */
 .services-section {
-  margin-top: 100px;
+  margin-top: 10px;
+  padding-top: 165px;
 }
+
+/* Extra small screens */
+@media (max-width: 430px) {
+  .services-section {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+/* My additional End */
 /* Orders */
 .orders {
   margin-top: 130px;

@@ -13,7 +13,7 @@ const Experience = () => {
   };
 
   return (
-    <section className="experience">
+    <section className="experience" style={{ marginTop: "65px" }}>
       <div className="experience-images">
         <img
           src={leftImage}
@@ -22,7 +22,7 @@ const Experience = () => {
         />
         <img src={rightImage} alt="Right side image" />
 
-        <div className="experience-text"style={{padding:"50px"}}>
+        <div className="experience-text" style={{ padding: "50px" }}>
           <h2>We have 24 years experience</h2>
           <p>
             At our garage, we prioritize seamless service and customer
@@ -34,7 +34,11 @@ const Experience = () => {
             the best care possible, allowing you to drive with confidence.
           </p>
           {/* Button to navigate to About Us page */}
-          <button className="about-button" onClick={handleAboutClick}>
+          <button
+            className="about-button"
+            onClick={handleAboutClick}
+            style={{ backgroundColor: "#081336" }}
+          >
             About Us
           </button>
         </div>

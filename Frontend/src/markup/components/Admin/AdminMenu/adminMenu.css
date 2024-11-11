@@ -13,6 +13,15 @@
   display: block;
   text-decoration: none;
 }
+
+/* My additional Start */
+/* Extra small screens */
+@media (max-width: 430px) {
+  .admin-menu {
+    padding-top: 70px !important;
+  }
+}
+/* My additional End */
 .list-group{
   width: 95%;
   margin-top: 10%;

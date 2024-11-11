@@ -12,7 +12,7 @@ function Home() {
           <h5>Working since 1992</h5>
           <h2>
             Enhance Your Car’s <br />
-            Efficiency and Power
+            Efficiency
             {/* Tuneup Your Car <br /> to Next Level */}
           </h2>
 
@@ -34,15 +34,15 @@ function Home() {
                 <i className="flaticon-play"></i>
               </Link>
             </div>
-            <div className="text">
-              Watch the Video to
-              <br /> Explore Our Services
-            </div>
+            <div className="text">Explore Our Services</div>
           </div>
         </div>
       </section>
 
-      <section className="about-section" style={{ paddingBottom: "0px" }}>
+      <section
+        className="about-section"
+        style={{ paddingBottom: "20px", paddingTop: "30px" }}
+      >
         <div className="auto-container">
           <div className="row">
             <div className="col-lg-5">
@@ -83,6 +83,15 @@ function Home() {
                   <Link
                     to="/about"
                     className="theme-btn btn-style-one style-two"
+                    style={{
+                      width: "100%",
+                      height: "50px",
+                      textAlign: "center",
+                      display: "flex",
+                      alignItems: "center",
+                      backgroundColor: "#081336",
+                      justifyContent: "center",
+                    }}
                   >
                     <span>
                       About Us <i className="flaticon-right"></i>
@@ -95,8 +104,11 @@ function Home() {
         </div>
       </section>
 
-      <section className="services-section" style={{ marginTop: "0px" }}>
-        <div className="auto-container">
+      <section
+        className="services-section"
+        style={{ marginTop: "0px", padding: "0px" }}
+      >
+        <div className="auto-container" style={{ paddingTop: "15px" }}>
           <div className="sec-title style-two">
             <h2>Our Services</h2>
             <div className="text">
@@ -303,15 +315,12 @@ function Home() {
                 <i className="flaticon-play"></i>
               </Link>
             </div>
-            <div className="text">
-              Watch the Video to
-              <br /> Explore Our Services
-            </div>
+            <div className="text">Explore Our Services</div>
           </div>
         </div>
       </section>
 
-      <section className="cta-section">
+      <section className="cta-section" style={{ padding: "15px" }}>
         <div className="auto-container">
           <div className="wrapper-box">
             <div className="left-column">

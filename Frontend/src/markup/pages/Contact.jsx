@@ -81,7 +81,10 @@ function Contact() {
         </div>
       </section>
 
-      <section className="cta-section">
+      <section
+        className="cta-section"
+        style={{ paddingTop: "10px", paddingBottom: "10px" }}
+      >
         <div className="auto-container">
           <div className="wrapper-box">
             <div className="left-column">
@@ -93,7 +96,11 @@ function Contact() {
             <div className="right-column">
               <div className="phone">1800.456.7890</div>
               <div className="btn">
-                <a href="/contact" className="theme-btn btn-style-one">
+                <a
+                  href="/contact"
+                  className="theme-btn btn-style-one"
+                  style={{ backgroundColor: "#081336" }}
+                >
                   <span>Contact us</span>
                   <i className="flaticon-right"></i>
                 </a>

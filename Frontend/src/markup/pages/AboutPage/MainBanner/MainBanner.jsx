@@ -39,7 +39,7 @@ const MainBanner = () => {
   return (
     <div
       className="main-banner"
-      style={{ backgroundImage: `url(${bannerImage})`,top:"+70px" }}
+      style={{ backgroundImage: `url(${bannerImage})`, top: "+70px" }}
     >
       <div className="banner-content">
         <h1 style={{ paddingTop: "10px" }}>About Us</h1>
@@ -47,10 +47,14 @@ const MainBanner = () => {
           <a
             href="/"
             style={{
-              color: "white",
-              fontSize: "24px",
-              backgroundColor: "#e74c3c",
-              borderRadius: "5px",width:"90px",paddingLeft:"10px"
+              width: "100px",
+              height: "40px",
+              textAlign: "center",
+              borderRadius: "5px",
+              display: "flex",
+              alignItems: "center",
+              backgroundColor: "#081336",
+              justifyContent: "center",
             }}
           >
             Home

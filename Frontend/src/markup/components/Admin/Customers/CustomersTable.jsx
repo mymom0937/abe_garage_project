@@ -87,18 +87,6 @@ const Table = () => {
     navigate(`/admin/customer-profile/${id}`);
   };
 
-  // Filter customers based on the search input
-  // const filteredCustomers = customers.filter((customer) =>
-  //   [
-  //     "customer_first_name",
-  //     "customer_last_name",
-  //     "customer_email",
-  //     "customer_phone_number",
-  //   ].some((key) =>
-  //     customer[key]?.toLowerCase().includes(searchTerm.toLowerCase())
-  //   )
-  // );
-
   const filteredCustomers = Array.isArray(customers)
     ? customers.filter((customer) =>
         [
@@ -135,7 +123,7 @@ const Table = () => {
   return (
     <section className="contact-section">
       <div className="contact-title" style={{ marginBottom: "50px" }}>
-        <h2>Customers</h2>
+        <h2 style={{ paddingLeft: "35px", marginBottom: "10px" }}>Customers</h2>
         {/* Search Input */}
         <div className={`${styles.searchContainer} `}>
           <input
@@ -206,11 +194,11 @@ const Table = () => {
                     <td data-label="Active">
                       {customer.active_customer_status ? "Yes" : "No"}
                     </td>
-                    <td data-label="Edit" style={{display:"flex"}}>
+                    <td data-label="Edit" style={{ display: "flex" }}>
                       <button>
                         <FaEdit
                           onClick={() => handleEdit(customer.id)}
-                         style={{color:"red"}}
+                          style={{ color: "red" }}
                         />
                       </button>
                       <button>
@@ -232,6 +220,7 @@ const Table = () => {
               className={styles.paginationButton}
               onClick={handleFirstPage}
               disabled={currentPage === 1}
+              style={{ backgroundColor: "#081336" }}
             >
               <FaAngleDoubleLeft />
               First
@@ -240,6 +229,7 @@ const Table = () => {
               className={styles.paginationButton}
               onClick={handlePreviousPage}
               disabled={currentPage === 1}
+              style={{ backgroundColor: "#081336" }}
             >
               <FaAngleLeft />
               Previous
@@ -248,6 +238,7 @@ const Table = () => {
               className={styles.paginationButton}
               onClick={handleNextPage}
               disabled={currentPage === totalPages}
+              style={{ backgroundColor: "#081336" }}
             >
               Next
               <FaAngleRight />
@@ -256,6 +247,7 @@ const Table = () => {
               className={styles.paginationButton}
               onClick={handleLastPage}
               disabled={currentPage === totalPages}
+              style={{ backgroundColor: "#081336" }}
             >
               Last
               <FaAngleDoubleRight />

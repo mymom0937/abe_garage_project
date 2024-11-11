@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 a {
@@ -45,5 +45,10 @@ img {
   .why-choose-us .benefits-list,
   .additional-services .services-list {
     flex-direction: column;
+  }
+  .app-container {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 20px;
   }
 }

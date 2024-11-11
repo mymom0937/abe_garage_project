@@ -18,7 +18,8 @@ body {
 .main-header .navigation a,
 .main-header .link-btn a {
   text-decoration: none;
-  color: #000;
+  /* color: #000; */
+    color:white;
 }
 
 .main-header .navigation a:hover,
@@ -27,8 +28,16 @@ body {
 }
 
 /* Buttons */
+/* Buttons */
 .link-btn .theme-btn {
   border-radius: 8px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: #081336;
+  justify-content: center;
 }
 
 /* Navigation Items */

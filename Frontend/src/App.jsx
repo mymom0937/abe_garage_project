@@ -1,11 +1,8 @@
 // Import react
 import React from "react";
 // Import the Routes and Route components from react-router
-
-
 import Home from "./markup/pages/Home";
 // Import the contactus components
-
 import Contact from "./markup/pages/Contact";
 // Import the login components
 import Login from "./markup/pages/Login";

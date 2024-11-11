@@ -7,8 +7,6 @@ import "./addEmployee.css";
 // Additional feature
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
-
-
 function AddEmployeeForm(props) {
   const [employee_email, setEmail] = useState("");
   const [employee_first_name, setFirstName] = useState("");
@@ -214,12 +212,30 @@ function AddEmployeeForm(props) {
                         </div>
                       )}
                     </div>
+                    {/* <div className="form-group col-md-12">
+                      <button
+                        className="theme-btn btn-style-one"
+                        type="submit"
+                        data-loading-text="Please wait..."
+                        style={{ width: "100%",height:"50px",textAlign:"center" }}
+                      >
+                        <span>Add employee</span>
+                      </button>
+                    </div> */}
                     <div className="form-group col-md-12">
                       <button
                         className="theme-btn btn-style-one"
                         type="submit"
                         data-loading-text="Please wait..."
-                        style={{ width: "77%" }}
+                        style={{
+                          width: "100%",
+                          height: "50px",
+                          textAlign: "center",
+                          display: "flex",
+                          alignItems: "center",
+                          backgroundColor: "#081336",
+                          justifyContent: "center",
+                        }}
                       >
                         <span>Add employee</span>
                       </button>

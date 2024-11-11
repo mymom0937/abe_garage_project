@@ -101,13 +101,13 @@ const Table = () => {
 
   return (
     <section className="contact-section orders" style={{ paddingTop: "0" }}>
-      <div className="contact-title" style={{ marginBottom: "50px" }}>
-        <h2 className="ml-5">Orders</h2>
+      <div className="contact-title" style={{ marginBottom: "40px",paddingTop:"20px" }}>
+        <h2 className="ml-55" style={{marginLeft:"35px"}}>Orders</h2>
       </div>
       {successMessage && (
         <div
           className="success-message"
-          style={{ color: "green", marginBottom: "20px", fontSize: "20px" }}
+          style={{ color: "green", marginBottom: "20px", fontSize: "20px",paddingLeft:"55px" }}
         >
           {successMessage}
         </div>
@@ -115,7 +115,7 @@ const Table = () => {
       {error && (
         <div
           className="error-message"
-          style={{ color: "red", marginBottom: "20px" }}
+          style={{ color: "red", marginBottom: "20px",paddingLeft:"55px" }}
         >
           Error: {error}
         </div>

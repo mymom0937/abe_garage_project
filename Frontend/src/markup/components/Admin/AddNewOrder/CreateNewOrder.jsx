@@ -85,7 +85,7 @@ export default function CreateNewOrder() {
   return (
     <section className="contact-section section-Wrapper outer-container">
       <div className="auto-container">
-        <div className="contact-title">
+        <div className="contact-title" style={{ paddingLeft: "30px" }}>
           <h2>Create new order</h2>
         </div>
         <div>
@@ -145,7 +145,16 @@ export default function CreateNewOrder() {
                   <button
                     className="theme-btn btn-style-one"
                     type="submit"
-                    data-loading-text="Please wait..." style={{width:"30%"}}
+                    data-loading-text="Please wait..."
+                    style={{
+                      width: "100%",
+                      height: "50px",
+                      textAlign: "center",
+                      display: "flex",
+                      alignItems: "center",
+                      backgroundColor: "#081336",
+                      justifyContent: "center",
+                    }}
                   >
                     <span>ADD NEW CUSTOMER</span>
                   </button>

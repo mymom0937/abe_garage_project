@@ -10,21 +10,23 @@ function Footer(props) {
           <div className="row no-gutters">
             <div className="footer-info-box col-md-4 col-sm-6 col-xs-12">
               <div className="info-inner">
-                <div className="content">
+                <div className="content" style={{ paddingLeft: "25px" }}>
                   <div className="icon">
                     <span className="flaticon-pin"></span>
                   </div>
-                  <div className="text">Addis Ababa, Ethiopia</div>
+                  <div className="text" style={{ paddingRight: "95px" }}>
+                    Addis Ababa, Ethiopia
+                  </div>
                 </div>
               </div>
             </div>
             <div className="footer-info-box col-md-4 col-sm-6 col-xs-12">
               <div className="info-inner">
-                <div className="content">
+                <div className="content" style={{ paddingLeft: "25px" }}>
                   <div className="icon">
                     <span className="flaticon-email"></span>
                   </div>
-                  <div className="text">
+                  <div className="text" style={{ paddingRight: "30px" }}>
                     Email us : <br />{" "}
                     {/* <a href="mailto:contact.contact@autorex.com"> */}
                     <a href="/contact">mymom0937@gmail.com</a>
@@ -34,11 +36,11 @@ function Footer(props) {
             </div>
             <div className="footer-info-box col-md-4 col-sm-6 col-xs-12">
               <div className="info-inner">
-                <div className="content">
+                <div className="content" style={{ paddingLeft: "25px" }}>
                   <div className="icon">
                     <span className="flaticon-phone"></span>
                   </div>
-                  <div className="text">
+                  <div className="text" style={{ paddingRight: "27px" }}>
                     Call us on : <br />
                     <strong>+251 937 59 79 17</strong>
                   </div>
@@ -47,6 +49,9 @@ function Footer(props) {
             </div>
           </div>
         </div>
+        {/* **** */}
+
+        {/* **** */}
       </div>
       <div className="widgets-section">
         <div className="auto-container">

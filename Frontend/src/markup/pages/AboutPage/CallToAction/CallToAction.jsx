@@ -8,7 +8,7 @@ const CallToAction = () => {
       <p>1-800-456-7890</p>
       <button
         className="cta-button"
-        style={{ color: "white", backgroundColor: "#C0392B" }}
+        style={{ color: "white", backgroundColor: "#081336" }}
       >
         Contact Us
       </button>
