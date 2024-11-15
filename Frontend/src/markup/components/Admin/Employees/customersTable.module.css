@@ -222,8 +222,3 @@
   cursor: pointer;
 }
 
-@media (max-width: 767px) {
-    .contactSectionThree {
-    margin-top: 0px!important;
-}
-}

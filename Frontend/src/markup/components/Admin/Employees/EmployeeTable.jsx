@@ -2,18 +2,18 @@ import React, { useEffect, useState } from "react";
 import styles from "./Table.module.css";
 import employeeService from "../../../../services/employee.service";
 import { useAuth } from "../../../../Contexts/AuthContext";
-import { FaEdit, FaTrash } from "react-icons/fa"; // Import icons from react-icons
-import { format } from "date-fns"; // Import date-fns
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-import Modal from "./Modal"; // Import the Modal component
+import { FaEdit, FaTrash } from "react-icons/fa";
+import { format } from "date-fns";
+import { useNavigate } from "react-router-dom";
+import Modal from "./Modal";
 
 const Table = () => {
   const [employees, setEmployees] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [successMessage, setSuccessMessage] = useState("");
-  const [selectedEmployeeId, setSelectedEmployeeId] = useState(null); // State to track the employee to be deleted
-  const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
+  const [selectedEmployeeId, setSelectedEmployeeId] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { employee } = useAuth();
   const navigate = useNavigate();
 
@@ -79,14 +79,30 @@ const Table = () => {
   }
 
   return (
-    <section className="contact-section" style={{ paddingTop: "0" }}>
-      <div className="contact-title" style={{ marginBottom: "30px",paddingBottom:"10px", paddingTop:"20px",paddingLeft:"45px"}}>
+    <section
+      className={`contact-section ${styles.contactSectionTwo}`}
+      style={{ paddingTop: "0" }}
+    >
+      <div
+        className="contact-title"
+        style={{
+          marginBottom: "30px",
+          paddingBottom: "10px",
+          paddingTop: "20px",
+          paddingLeft: "45px",
+        }}
+      >
         <h2>Employees</h2>
       </div>
       {successMessage && (
         <div
           className="success-message"
-          style={{ color: "green", marginBottom: "0px", fontSize: "20px",paddingLeft:"60px" }}
+          style={{
+            color: "green",
+            marginBottom: "0px",
+            fontSize: "20px",
+            paddingLeft: "60px",
+          }}
         >
           {successMessage}
         </div>
@@ -94,7 +110,7 @@ const Table = () => {
       {error && (
         <div
           className="error-message"
-          style={{ color: "red", marginBottom: "20px",paddingLeft:"60px" }}
+          style={{ color: "red", marginBottom: "20px", paddingLeft: "60px" }}
         >
           Error: {error}
         </div>
@@ -115,14 +131,16 @@ const Table = () => {
         <tbody>
           {employees.map((emp) => (
             <tr key={emp.employee_id}>
-              <td>{emp.active_employee ? "Yes" : "No"}</td>
-              <td>{emp.employee_first_name}</td>
-              <td>{emp.employee_last_name}</td>
-              <td>{emp.employee_email}</td>
-              <td>{emp.employee_phone}</td>
-              <td>{format(new Date(emp.added_date), "M-d-yyyy")}</td>
-              <td>{emp.company_role_name}</td>
-              <td style={{ display: "flex" }}>
+              <td data-label="Active">{emp.active_employee ? "Yes" : "No"}</td>
+              <td data-label="First Name">{emp.employee_first_name}</td>
+              <td data-label="Last Name">{emp.employee_last_name}</td>
+              <td data-label="Email">{emp.employee_email}</td>
+              <td data-label="Phone">{emp.employee_phone}</td>
+              <td data-label="Added Date">
+                {format(new Date(emp.added_date), "M-d-yyyy")}
+              </td>
+              <td data-label="Role">{emp.company_role_name}</td>
+              <td data-label="Edit/Delete" style={{ display: "flex" }}>
                 <FaEdit
                   onClick={() => handleEdit(emp.employee_id)}
                   className={`${styles.editButton} ml-3 mt-1`}
@@ -147,5 +165,3 @@ const Table = () => {
 };
 
 export default Table;
-
-

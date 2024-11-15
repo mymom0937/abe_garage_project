@@ -29,29 +29,6 @@ const Table = () => {
   // Search state
   const [searchTerm, setSearchTerm] = useState(""); // New state to store the search input
 
-  // useEffect(() => {
-  //   const fetchCustomers = async () => {
-  //     try {
-  //       if (employee && employee.employee_token) {
-  //         const resultCustomer = await customerService?.getAllCustomers(
-  //           employee.employee_token
-  //         );
-  //         if (resultCustomer?.status === "success") {
-  //           setCustomers(resultCustomer.customers || []); // Ensure we are setting an array
-  //         } else {
-  //           throw new Error("Failed to fetch customers");
-  //         }
-  //       }
-  //     } catch (error) {
-  //       setError(error.message);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   fetchCustomers();
-  // }, [employee]);
-
   useEffect(() => {
     const fetchCustomers = async () => {
       try {
@@ -121,7 +98,10 @@ const Table = () => {
   }
 
   return (
-    <section className="contact-section">
+    // <section className="contact-section">
+      <section
+      className={`contact-section ${styles.contactSectionThree}`}
+    >
       <div className="contact-title" style={{ marginBottom: "50px" }}>
         <h2 style={{ paddingLeft: "35px", marginBottom: "10px" }}>Customers</h2>
         {/* Search Input */}

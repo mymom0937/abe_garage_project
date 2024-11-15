@@ -184,6 +184,15 @@ export default function CustomerOrderDetail() {
                 <button
                   className="theme-btn btn-style-one mt-3"
                   onClick={handleSaveChanges}
+                  style={{
+                    width: "100%",
+                    height: "50px",
+                    textAlign: "center",
+                    display: "flex",
+                    alignItems: "center",
+                    backgroundColor: "#081336",
+                    justifyContent: "center",
+                  }}
                 >
                   Save Changes
                 </button>
@@ -210,4 +219,3 @@ export default function CustomerOrderDetail() {
     </div>
   );
 }
-

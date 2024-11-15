@@ -177,7 +177,7 @@ export default function ChooseService({ customerId, vehicleId, employee }) {
                       }
                       placeholder="Order Description"
                       rows="4"
-                      style={{ width: "100%",height:"70px" }}
+                      style={{ width: "100%", height: "70px" }}
                       className="form-control"
                     />
                   </div>
@@ -190,7 +190,7 @@ export default function ChooseService({ customerId, vehicleId, employee }) {
                       }
                       placeholder="Additional Request"
                       rows="4"
-                      style={{ width: "100%",height:"70px" }}
+                      style={{ width: "100%", height: "70px" }}
                       className="form-control"
                     />
                   </div>
@@ -216,6 +216,15 @@ export default function ChooseService({ customerId, vehicleId, employee }) {
                       className="theme-btn btn-style-one"
                       type="submit"
                       data-loading-text="Please wait..."
+                      style={{
+                        width: "100%",
+                        height: "50px",
+                        textAlign: "center",
+                        display: "flex",
+                        alignItems: "center",
+                        backgroundColor: "#081336",
+                        justifyContent: "center",
+                      }}
                     >
                       <span>SUBMIT ORDER</span>
                     </button>
