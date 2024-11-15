@@ -30,8 +30,10 @@ body, html {
 }
 
 @media (max-width: 430px) {
-    textarea, input[type="email"] {
-        width: 76% !important;
+    textarea,
+    input[type="email"],
+    input[type="text"] {
+        width: 100% !important;
     }
 }
 

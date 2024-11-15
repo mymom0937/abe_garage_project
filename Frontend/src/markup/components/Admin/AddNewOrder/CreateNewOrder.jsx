@@ -84,7 +84,7 @@ export default function CreateNewOrder() {
 
   return (
     <section className="contact-section section-Wrapper outer-container">
-      <div className="auto-container">
+      <div className="auto-container auto-containerTwo">
         <div className="contact-title" style={{ paddingLeft: "30px" }}>
           <h2>Create new order</h2>
         </div>
@@ -101,9 +101,6 @@ export default function CreateNewOrder() {
                         onChange={handleSearchChange}
                         placeholder="Search for customers using first name, last name, email address, or phone number"
                       />
-                      {/* <button className="search-icon">
-                        <FaSearch />
-                      </button> */}
                     </div>
                     {dropdownVisible && filteredCustomers.length > 0 && (
                       <div className="dropdown">

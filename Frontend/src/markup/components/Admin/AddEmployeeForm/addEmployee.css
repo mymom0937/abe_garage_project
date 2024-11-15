@@ -135,9 +135,16 @@ select.custom-select-box {
 @media (max-width: 430px) {
     textarea,
     input[type="email"],
+    input[type="text"],
+    input[type="submit"],
     select[name="employee_role"],
     .employee_password {
-        width: 76% !important;
+        width: 100% !important;
     }
 }
 
+@media (max-width: 767px) {
+    .contact-section {
+    margin-top: 0px!important;
+}
+}

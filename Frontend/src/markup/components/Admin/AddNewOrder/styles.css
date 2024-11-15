@@ -22,10 +22,11 @@
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-textarea, input[type="text"] {
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 0px !important;
+textarea,
+input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 0px !important;
 }
 .search-box-container .search-icon {
   border: none;
@@ -92,7 +93,6 @@ textarea, input[type="text"] {
   padding: 20px; /* Optional: adds padding inside the section */
   background: #fff; /* Optional: sets background color to white */
   margin: 120px 20px 20px 20px; /* Optional: adds margin around the section */
-
 }
 
 /* Media Queries for smaller screens */
@@ -148,7 +148,7 @@ textarea, input[type="text"] {
   .outer-container {
     padding: 10px; /* Further reduce padding */
     margin: 5px;
-   margin-top: 16%; /* Further reduce margin */
+    margin-top: 16%; /* Further reduce margin */
   }
 }
 /* Media Queries for very small screens */
@@ -156,9 +156,9 @@ textarea, input[type="text"] {
 /* For screens smaller than 425px */
 @media (max-width: 430px) {
   .search-input-wrapper {
-    
-    width: 141%;
-}
+    width: 100%;
+    /* margin-top: 5px; */
+  }
   .search-box-container {
     width: 100%; /* Ensure the search box container fits within the parent */
     margin-bottom: 15px; /* Reduce bottom margin for better fit */
@@ -170,14 +170,20 @@ textarea, input[type="text"] {
     margin-left: 0; /* Reset margin for better alignment */
     position: static; /* Ensure proper positioning */
   }
-.auto-container {
-    width: 101%;
-    padding: 0px 15px;
+
+  .auto-container {
+    width: 100%;
+    padding: 0px 10px;
     margin: 15% -11%;
-}
-.container-style{
-  margin-top: 400px;
-}
+  }
+
+  .auto-containerTwo {
+    margin: 0 auto !important; /* Top & Bottom: 0, Left & Right: -11% */
+  }
+
+  .container-style {
+    margin-top: 400px;
+  }
   .search-box-container input {
     padding-top: 5%;
     padding-left: 5px;
@@ -207,34 +213,19 @@ textarea, input[type="text"] {
     padding: 10px; /* Reduce padding */
     margin: 19px 5px 17px 5px; /* Reduce margin */
   }
-
-     .theme-btn {
-        margin-top: 8%;
-        font-size: 10px;
-        padding: 7px;
-    }
-    textarea, input[type="text"] {
-    width: 76% !important;
-}
-}
-
-/* @media (max-width: 768px) {
-  .section-Wrapper {
-    height: 100vw;
+  .theme-btn {
+    margin-top: 8%;
+    font-size: 10px;
+    padding: 7px;
   }
-  .contact-section .contact-title h2 {
-    margin-left: -26px;
-    font-size: 20px;
-  }
-
- .contact-section .contact-title h2:after {
-        right: -58px;
-        bottom: 8px;
-        height: 1.4px;
+  @media (max-width: 430px) {
+    textarea,
+    button[type="submit"] {
+      width: 100% !important;
     }
-
-
-.search-box-container {
-    
-    margin-left: -54px;
-}} */
+  }
+  textarea,
+  input[type="text"] input[type="submit"] {
+    width: 100% !important;
+  }
+}

@@ -107,6 +107,7 @@ function AddEmployeeForm(props) {
 
   return (
     <section className="contact-section">
+    {/* // <section className={`contact-section ${styles.contactSectionFour}`}> */}
       <div className="auto-container">
         <div className="contact-title">
           <h2>Add a new employee</h2>
@@ -212,16 +213,6 @@ function AddEmployeeForm(props) {
                         </div>
                       )}
                     </div>
-                    {/* <div className="form-group col-md-12">
-                      <button
-                        className="theme-btn btn-style-one"
-                        type="submit"
-                        data-loading-text="Please wait..."
-                        style={{ width: "100%",height:"50px",textAlign:"center" }}
-                      >
-                        <span>Add employee</span>
-                      </button>
-                    </div> */}
                     <div className="form-group col-md-12">
                       <button
                         className="theme-btn btn-style-one"
