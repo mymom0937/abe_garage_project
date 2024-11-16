@@ -26,7 +26,7 @@ const Table = () => {
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
-  const employeesPerPage = 7;
+  const employeesPerPage = 8;
 
   useEffect(() => {
     const fetchEmployees = async () => {
