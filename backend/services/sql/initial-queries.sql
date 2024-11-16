@@ -158,16 +158,16 @@ VALUES ('Employee'), ('Manager'), ('Admin');
 
 -- Generate a unique employee ID, e.g., 'EMP001'
 INSERT INTO employee (employee_id, employee_email, active_employee, added_date)
-VALUES ('a21aca3a19fb677cfe387b9b7d584f04', 'admin@admin.com', 1, CURRENT_TIMESTAMP);
+VALUES ('2f30f515190ea897aef01b3d540b8f77', 'admin@admin.com', 1, CURRENT_TIMESTAMP);
 
 -- Insert employee_info with the same employee_id
 INSERT INTO employee_info (employee_id, employee_first_name, employee_last_name, employee_phone)
-VALUES ('a21aca3a19fb677cfe387b9b7d584f04', 'Admin', 'Admin', '555-555-5555');
+VALUES ('2f30f515190ea897aef01b3d540b8f77', 'Admin', 'Admin', '555-555-5555');
 
--- Password is #$1234
+-- Password is 1234~!@#$
 INSERT INTO employee_pass (employee_id, employee_password_hashed)
-VALUES ('a21aca3a19fb677cfe387b9b7d584f04', '$2b$10$dzAawXVMPsrsiAv.MDfgsexDMwC7XduCMA.cwSgQty8gxREJaohr.');
+VALUES ('2f30f515190ea897aef01b3d540b8f77', '$2b$10$aQq.LPFuUkJoT99VQ/6a1.FbTyjU46RCAr6sRHxYxvlBA76Niql7q');
 
 -- Assign a role to the employee
 INSERT INTO employee_role (employee_id, company_role_id)
-VALUES ('a21aca3a19fb677cfe387b9b7d584f04', 3);
+VALUES ('2f30f515190ea897aef01b3d540b8f77', 3);

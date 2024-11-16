@@ -45,7 +45,7 @@ app.listen(port, () => {
 // //generate a random string for hashed password 
 // const bcrypt = require("bcrypt");
 
-// const password = "#$1234";
+// const password = "1234~!@#$";
 // const saltRounds = 10;
 
 // bcrypt.hash(password, saltRounds, function (err, hash) {
