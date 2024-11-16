@@ -73,6 +73,7 @@ async function getEmployeeByEmail(employee_email) {
   const rows = await conn.query(query, [employee_email]);
   return rows;
 }
+
 // A function to get all employees
 async function getAllEmployees() {
   const query =

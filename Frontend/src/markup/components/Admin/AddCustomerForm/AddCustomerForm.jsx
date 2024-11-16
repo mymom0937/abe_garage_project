@@ -75,7 +75,8 @@ function AddCustomerForm() {
           setTimeout(() => {
             setSpinner(false);
             setServerMsg("");
-            window.location.href = "/";
+            // window.location.href = "/";
+            window.location.href = "/admin/customers";
           }, 2000);
         }
       })

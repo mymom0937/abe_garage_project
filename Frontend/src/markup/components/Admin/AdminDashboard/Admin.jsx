@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 export default function Admin() {
   return (
     <div>
@@ -20,7 +20,7 @@ export default function Admin() {
               <div className="inner-box hvr-float-shadow">
                 <h5>OPEN FOR ALL</h5>
                 <h2>All Orders</h2>
-                <a href="#" className="read-more">
+                <a href="/admin/orders" className="read-more">
                   LIST OF ORDERS +
                 </a>
                 <div className="icon">
@@ -31,9 +31,9 @@ export default function Admin() {
             <div className="col-lg-4 service-block-one">
               <div className="inner-box hvr-float-shadow">
                 <h5>OPEN FOR LEADS</h5>
-                <h2>New Orders</h2>
-                <a href="#" className="read-more">
-                  LIST OF ORDERS +
+                <h2>New Order</h2>
+                <a href="/admin/order" className="read-more">
+                  ADD NEW ORDER +
                 </a>
                 <div className="icon">
                   <span className="flaticon-gearbox"></span>
@@ -45,7 +45,7 @@ export default function Admin() {
                 <h5>OPEN FOR ADMINS</h5>
                 <h2>Employees</h2>
                 <Link to="/admin/employees" className="read-more">
-                  LIST OF ORDERS +
+                  LIST OF Employees +
                 </Link>
                 <div className="icon">
                   <span className="flaticon-brake-disc"></span>
@@ -57,7 +57,7 @@ export default function Admin() {
                 <h5>OPEN FOR ADMINS</h5>
                 <h2>Add Employee</h2>
                 <Link to="/admin/add-employee" className="read-more">
-                  Read More +
+                  Add Employee +
                 </Link>
                 <div className="icon">
                   <span className="flaticon-tire"></span>
@@ -69,7 +69,7 @@ export default function Admin() {
                 <h5>OPEN FOR ADMINS</h5>
                 <h2>Add Customer</h2>
                 <Link to="/admin/add-customer" className="read-more">
-                  Read More +
+                  Add Customer +
                 </Link>
                 <div className="icon">
                   <span className="flaticon-tire"></span>

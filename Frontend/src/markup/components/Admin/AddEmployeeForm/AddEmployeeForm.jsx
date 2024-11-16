@@ -86,7 +86,8 @@ function AddEmployeeForm(props) {
           setSuccess("Employee added successfully!");
           setServerError("");
           setTimeout(() => {
-            window.location.href = "/";
+            // window.location.href = "/";
+            window.location.href = "/admin/employees";
           }, 2000);
         }
       })
@@ -107,7 +108,7 @@ function AddEmployeeForm(props) {
 
   return (
     <section className="contact-section">
-    {/* // <section className={`contact-section ${styles.contactSectionFour}`}> */}
+      {/* // <section className={`contact-section ${styles.contactSectionFour}`}> */}
       <div className="auto-container">
         <div className="contact-title">
           <h2>Add a new employee</h2>

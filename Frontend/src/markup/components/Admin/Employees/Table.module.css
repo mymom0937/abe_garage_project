@@ -1,81 +1,222 @@
 .customTable {
   width: 100%;
   border-collapse: collapse;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  text-align: left;
+  overflow-x: auto;
 }
 
-.customTable th,
-.customTable td {
-  padding: 12px;
-  text-align: left;
+.customTable th, .customTable td {
+  padding: 10px 15px;
   border: 1px solid #ddd;
 }
 
 .customTable th {
-  background-color: #f0f0f0;
-  font-weight: bold;
-  color: #333;
+  background-color: #081336;
+  color: #fff;
 }
 
 .customTable tr:nth-child(even) {
-  background-color: #fafafa;
+  background-color: #f9f9f9;
+}
+
+.customTable tr:nth-child(odd) {
+  background-color: #fff;
 }
 
 .customTable tr:hover {
   background-color: #f1f1f1;
 }
 
-/* Responsive Table Styles */
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap; /* Adjusts layout for smaller screens */
+}
+
+.paginationButton {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.paginationButton:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.editButton, .deleteButton {
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #081336;
+  transition: transform 0.2s ease;
+}
+
+.editButton:hover {
+  color: #4CAF50;
+  transform: scale(1.2);
+}
+
+.deleteButton:hover {
+  color: #E53935;
+  transform: scale(1.2);
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  justify-content: center;
+}
+
+.searchInput {
+  padding: 8px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 250px; /* Limit the input width on large screens */
+}
+
+.searchIcon {
+  margin-left: -30px;
+  color: #081336;
+  font-size: 20px;
+}
+
 @media (max-width: 768px) {
+  .customTable th, .customTable td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .paginationContainer {
+    flex-direction: column;
+  }
+
+  .paginationButton {
+    width: 100%; /* Ensure buttons stack in smaller screens */
+  }
+
+  .editButton, .deleteButton {
+    font-size: 16px;
+  }
+
+  .searchContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .searchInput {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .searchIcon {
+    margin-left: 0;
+    position: absolute;
+    right: 10px;
+  }
+}
+
+/* ************************** */
+/* Add media queries to handle smaller screen sizes */
+@media (max-width: 1374px) {
   .customTable,
   .customTable thead,
   .customTable tbody,
   .customTable th,
   .customTable td,
   .customTable tr {
-    display: block;
+    display: block; /* Make the table rows display as block elements */
+  }
+  .customTable td[data-label]:before {
+    content: attr(data-label);
+  }
+  .customTable td:nth-child(odd) {
+    background-color: #f2f2f2; /* Light gray for odd rows */
   }
 
-  .customTable thead {
-    display: none; /* Hide the table headers */
+  .customTable td:nth-child(even) {
+    background-color: white; /* White for even rows */
+  }
+  .customTable thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
   }
 
   .customTable tr {
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 8px;
+    border-bottom: 3px solid #ccc; /* Add border between each customer row */
+    /* margin-bottom: 10px; */
+    padding: 12px;
   }
 
   .customTable td {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-    text-align: left;
     border: none;
     position: relative;
     padding-left: 50%;
+    text-align: left;
   }
 
-  .customTable td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    color: #333;
+  .customTable td[data-label]:before {
     position: absolute;
+    top: 10px;
     left: 10px;
-    white-space: nowrap;
-  }
-
-  .customTable td:last-child {
-    border-bottom: none;
+    text-align: left;
   }
 }
 
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.paginationButton {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.paginationButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Search Container */
+.searchContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.searchInput {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.searchIcon {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
 
 @media (max-width: 767px) {
-    .contactSectionTwo {
+    .contactSectionThree {
     margin-top: 0px!important;
 }
 }
+/* ********************** */
