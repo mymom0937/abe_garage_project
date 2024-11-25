@@ -74,8 +74,8 @@ function LoginForm() {
   };
 
   return (
-    <section className="contact-section">
-      <div className="auto-container">
+    <section className="contact-section login-css">
+      <div className="auto-container login-css ">
         <div className="contact-title">
           <h2>Login to your account</h2>
         </div>
